@@ -17,7 +17,13 @@ int main(void) {
     assert(ToInteger("-7") == -7);
     assert(ToInteger("100") == 100);
 
-    /* ── Operacion libre — agregar tests aca ────────────────────────────── */
+    /* ── FromBinary ─────────────────────────────────────────────────────── */
+    assert(FromBinary("0") == 0);
+    assert(FromBinary("1") == 1);
+    assert(FromBinary("10") == 2);
+    assert(FromBinary("101") == 5);
+    assert(FromBinary("11111111") == 255);
+    assert(FromBinary("0001") == 1);
 
     return 0;
 }

@@ -16,7 +16,10 @@
  * Post: devuelve el valor entero correspondiente a la cadena */
 int ToInteger(const char *s);
 
-/* TODO: agregar una operacion a definir libremente.
- * Documentar Pre, Post y firma antes del prototipo. */
+/* FromBinary: String -> Natural
+ * Pre:  s != NULL, s no vacia, todos sus caracteres son '0' o '1',
+ *       y el valor representado entra en un int
+ * Post: devuelve el valor entero que representa s en base 2 */
+int FromBinary(const char *s);
 
 #endif
